@@ -1,7 +1,7 @@
 # LowPower_ALU_with_ClockGating
 # Low-Power ALU with Clock Gating (Verilog HDL)
 
-## 📌 Introduction
+ Introduction
 An **Arithmetic Logic Unit (ALU)** is the heart of a CPU, performing arithmetic and logical operations.  
 In modern VLSI design, **low power consumption** is crucial — especially in battery-powered and embedded systems.
 
@@ -10,7 +10,7 @@ The design was created, simulated, and analyzed using **Intel Quartus Prime** an
 
 ---
 
-## 🎯 Project Goal
+ Project Goal
 The aim of this project is to:
 1. Design a functional 4-bit ALU capable of performing common arithmetic and logic operations.
 2. Integrate **clock gating** to disable unused parts of the circuit when not in operation, reducing switching activity.
@@ -18,7 +18,7 @@ The aim of this project is to:
 
 ---
 
-## ⚙️ How It Works
+ How It Works
 The ALU accepts:
 - **Two 4-bit inputs**: `A` and `B`
 - **Control signal (Opcode)**: Selects which operation to perform
@@ -28,7 +28,7 @@ When the **Enable** signal is LOW, the clock to the ALU is gated (disabled), pre
 
 ---
 
-## 🛠 Supported Operations
+Supported Operations
 | Opcode | Operation             |
 |--------|-----------------------|
 | 000    | Addition (`A + B`)    |
@@ -41,8 +41,7 @@ When the **Enable** signal is LOW, the clock to the ALU is gated (disabled), pre
 | 111    | Pass-Through (`A`)    |
 
 ---
-
-## 🧠 Low Power Concept: Clock Gating
+ Low Power Concept: Clock Gating
 Dynamic power in digital circuits is given by:
 
 **P = α × C × V² × f**
@@ -60,7 +59,7 @@ By **gating the clock** when the ALU is idle:
 
 ---
 
-## 🧪 Design and Verification Steps
+Design and Verification Steps
 1. **RTL Design**:  
    - Wrote the ALU in Verilog with a separate clock gating module.
 2. **Testbench Creation**:  
@@ -74,11 +73,10 @@ By **gating the clock** when the ALU is idle:
 
 ---
 
-## 📊 Results
+ Results
 - The ALU functioned correctly for all test cases.
 - Clock gating reduced dynamic power consumption (measured via Quartus Power Analyzer).
 - Significant power savings observed when the ALU was idle for extended periods.
 
 ---
 
-## 📂 File Structure
