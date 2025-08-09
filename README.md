@@ -80,3 +80,7 @@ Design and Verification Steps
 
 ---
 
+simulation
+<img width="1128" height="499" alt="Screenshot 2025-08-09 010015" src="https://github.com/user-attachments/assets/2584936f-c4cc-42cb-bf54-35dccf595d76" />
+
+
